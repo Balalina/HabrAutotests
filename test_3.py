@@ -1,4 +1,4 @@
-from first_1 import *
+from page import *
 
 
 def test_main_page(driver):
