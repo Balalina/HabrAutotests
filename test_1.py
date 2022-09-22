@@ -1,16 +1,13 @@
 from page import *
 
 
-def test_empty_search(driver):
+def test_basic_search(driver):
     click_search_form(driver)
 
-    type_text(driver, 'fshtjnfvd')
+    type_text(driver, 'NFT')
 
     click_search_button(driver)
 
     count_articles_number(driver)
 
-    check_empty_page_text(driver)
-
-
-
+    count_pages_number(driver)
