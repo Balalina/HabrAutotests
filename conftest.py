@@ -9,10 +9,6 @@ def setup():
     print('set up')
     driver = webdriver.WebDriver(executable_path='chromedriver.exe')
 
-    driver.get('https://habr.com')
-
-    time.sleep(1)
-
     return driver
 
 

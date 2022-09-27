@@ -2,12 +2,14 @@ from page import *
 
 
 def test_basic_search(driver):
-    click_search_form(driver)
+    page = MainPage(driver)
+    page.open()
 
-    type_text(driver, 'NFT')
 
-    click_search_button(driver)
+    page = page.click_search()
 
-    count_articles_number(driver)
+    page.search('NFT')
 
-    count_pages_number(driver)
+    print(page.count_articles_number())
+    print(page.count_pages_number())
+
